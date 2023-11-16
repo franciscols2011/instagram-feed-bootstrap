@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Instagram</title>
+</head>
+<body>
+    <div class="container-fluid pl-0">
+        <nav class="navbar navbar-expand-lg bg-light"> 
+            <div class="container">
+
+                <a class="navbar-brand d-flex align-items-center gap-1 col-1" href="index.html">
+
+                    <i class="fa-brands fa-instagram"></i>
+        
+                    <span><b>Instagram</b></span>
+        
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                    <ul class="navbar-nav align-items-center">
+                        <li class="nav-item active">
+                            <form class="form-inline col-10"> 
+                        
+                                <input class="form-control mr-sm-2" style="height: 30px" type="search" placeholder="Search" aria-label="Search">
+                              </form>
+
+                        </li>
+                        <li class="nav-item active">
+
+                            <button type="button" s class="btn btn-success" data-bs-toggle="modal" data-bs-target="#postmodal">
+                                Create a new post
+                              </button>
+                              
+                              <!-- Modal -->
+                              <div class="modal fade" id="postmodal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h1 class="modal-title fs-5" id="exampleModalLabel"><b>Create a new post</b></h1>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <form action="#">
+                                        <div class="form-group">
+                                            <label for="textAreaControl" class="pb-2 pt-0" >Caption:</label>
+                                            <textarea class="form-control mb-2" id="textAreaControl" rows="2" placeholder="Add the caption of your post here"></textarea>
+                                        </div>
+                                      </form>
+                                      <i class="fa-solid fa-camera" style="font-size: 20px; margin-right:3px ;padding: 6px; border: 1px solid gray"></i>
+                                      <i class="fa-solid fa-location-dot" style="font-size: 20px; padding: 6px 8px; border: 1px solid gray"></i>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                      <button type="button" class="btn btn-success">Publish</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"                         data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa-solid fa-gear"></i>
+                            </a>
+                            
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+
+                                <a class="dropdown-item" href="#">Profile</a>
+                                <a class="dropdown-item" href="#">Accesibility</a>
+                                <a class="dropdown-item" href="#">Privacy and Data</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item text-danger" href="#"><strong>Log out </strong><i class="fa-solid fa-right-from-bracket fa-rotate-180"  style="margin-left: 38px;"></i></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <nav>
+            <div class="nav nav-pills my-4 justify-content-center" id="pills-tab" role="tablist">
+                <a class="nav-items nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                    <i class="fa-solid fa-table-cells"></i>
+                </a>
+                <a class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+                    <i class="fa-solid fa-square"></i>
+                </a>
+            </div>
+        </nav>
+        <div class="container tab-content" id="pills-tabContent">
+
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                <div class="card-group">
+                    <div class="card" style="border: 0px">
+
+                          <img src="https://imgs.elpais.com.uy/dims4/default/9fa7a07/2147483647/strip/true/crop/1080x743+0+0/resize/1440x990!/quality/90/?url=https%3A%2F%2Fel-pais-uruguay-production-web.s3.us-east-1.amazonaws.com%2Fbrightspot%2Feb%2Fde%2F2add4ff8467b97b6085de08466ef%2Ff324utcwyaakoe1-fotor-20230823202013.jpg" class="card-img-top mx-2 my-2" alt="Cavani_Boca">
+
+                      </div>
+                    <div class="card" style="border: 0px">
+
+                        <img src="https://imgs.elpais.com.uy/dims4/default/1f7bede/2147483647/strip/true/crop/1091x750+0+0/resize/1440x990!/quality/90/?url=https%3A%2F%2Fel-pais-uruguay-production-web.s3.us-east-1.amazonaws.com%2Fbrightspot%2Fcd%2F62%2Fd80bb2814c248349c1b7ae56ea48%2Fdiseno-sin-titulo.jpg" class="card-img-top mx-2 my-2" alt="Merentiel_boca">
+
+                    </div>
+                    <div class="card" style="border: 0px;">
+
+                          <img src="https://c.wallhere.com/photos/b4/69/1440x990_px_adidas_shoes_spikes-807543.jpg!d" class="card-img-top mx-2 my-2" alt="Roman_Boca">
+
+                      </div>
+                  </div>
+                  <div class="card-group">
+                    <div class="card" style="border: 0px">
+
+                          <img src="https://live.staticflickr.com/3083/2609167381_217c4e78c1_b.jpg" class="card-img-top mx-2 my-2" alt="...">
+
+                      </div>
+                    <div class="card" style="border: 0px">
+
+                        <img src="//live.staticflickr.com/2079/2443409787_b79abbef34_b.jpg" class="card-img-top mx-2 my-2" alt="...">
+
+                    </div>
+                    <div class="card" style="border: 0px">
+
+                          <img src="https://picsum.photos/1080/810" class="card-img-top mx-2 my-2" alt="...">
+
+                      </div>
+                  </div>
+                  <div class="card-group">
+                    <div class="card" style="border: 0px">
+
+                          <img src="https://picsum.photos/1080/810" class="card-img-top mx-2 my-2" alt="...">
+
+                      </div>
+                    <div class="card" style="border: 0px">
+
+                        <img src="https://picsum.photos/1080/810" class="card-img-top mx-2 my-2" alt="...">
+
+                    </div>
+                    <div class="card" style="border: 0px">
+
+                          <img src="https://picsum.photos/1080/810" class="card-img-top mx-2 my-2" alt="...">
+
+                      </div>
+                  </div>
+            </div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                
+                <div class="row">
+                    <div class="card my-4 mx-auto p-0" style="width: 800px;">
+                        <div class="row justify-content-between align-items-center p-3">
+                            <h5 class="col-10 card-title">Cavani & Romero</h5>
+                            <p class="col-2 card-text" style="padding-left: 70px">08/26</p>
+                        </div>
+                            <img src="https://estaticos-cdn.elperiodico.com/clip/aa6cb38a-e112-4ec4-bd61-b915734339a7_alta-libre-aspect-ratio_default_0.jpg" class="card-img-top" alt="...">
+                            <p class="px-3 my-2"><strong>23 likes</strong></p>
+                            <p class="px-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis magni nobis quas? Repudiandae quae odit, nulla distinctio deserunt sint eius reprehenderit, ullam provident tenetur asperiores nemo perferendis adipisci totam porro!</p>
+                    </div>
+                    <div class="card my-4 mx-auto p-0" style="width: 800px;">
+                        <div class="row justify-content-between align-items-center p-3">
+                            <h5 class="col-10 card-title">Merengol</h5>
+                            <p class="col-2 card-text" style="padding-left: 70px">08/26</p>
+                        </div>
+                            <img src="https://imgs.elpais.com.uy/dims4/default/1f7bede/2147483647/strip/true/crop/1091x750+0+0/resize/1440x990!/quality/90/?url=https%3A%2F%2Fel-pais-uruguay-production-web.s3.us-east-1.amazonaws.com%2Fbrightspot%2Fcd%2F62%2Fd80bb2814c248349c1b7ae56ea48%2Fdiseno-sin-titulo.jpg" class="card-img-top" alt="merentiel">
+                            <p class="px-3 my-2"><strong>23 likes</strong></p>
+                            <p class="px-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis magni nobis quas? Repudiandae quae odit, nulla distinctio deserunt sint eius reprehenderit, ullam provident tenetur asperiores nemo perferendis adipisci totam porro!</p>
+                    </div>
+                    <div class="card my-4 mx-auto p-0" style="width: 800px;">
+                        <div class="row justify-content-between align-items-center p-3">
+                            <h5 class="col-10 card-title">Random picture</h5>
+                            <p class="col-2 card-text" style="padding-left: 70px">08/26</p>
+                        </div>
+                            <img src="https://picsum.photos/1080/810" class="card-img-top" alt="barco">
+                            <p class="px-3 my-2"><strong>23 likes</strong></p>
+                            <p class="px-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis magni nobis quas? Repudiandae quae odit, nulla distinctio deserunt sint eius reprehenderit, ullam provident tenetur asperiores nemo perferendis adipisci totam porro!</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<script src="https://kit.fontawesome.com/4a5e8b43f3.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
